@@ -24,7 +24,7 @@ const ProductCard = ({ product, all }: ProductCardProps) => {
                 <Image src={image} alt="product" layout="fill" objectFit="cover" />
             </ImageWrapper>
             <ProductDetail>
-                <Link href={`/product/${id}`} passHref>
+                <Link href={`/products/${id}`} passHref>
                     <ProductTitle>{title}</ProductTitle>
                 </Link>
                 <ProductDescription $all={all}>{description}</ProductDescription>

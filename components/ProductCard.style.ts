@@ -34,15 +34,14 @@ export const ProductTitle = styled.a`
 `;
 
 export const ProductDescription = styled.div<{ $all?: boolean }>`
-  color: #7d7d7d;
-  font-size: 16px;
-  width: 400px;
-  ${({ $all }) =>
-        !$all &&
-        css`
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
+    color: #7d7d7d;
+    font-size: 16px;
+    width: 400px;
+    ${({ $all }) =>
+        !$all && css`
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
     `}
 `;
 
